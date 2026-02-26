@@ -1,5 +1,10 @@
 @use "../../styles/variables" as *;
 
+.abuse-list-hero {
+    img {
+        border-radius: $border-radius;
+    }
+}
 
 .black {
     background-color: $black;
