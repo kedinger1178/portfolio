@@ -1,0 +1,225 @@
+@use "../../styles/variables" as *;
+
+.page-about {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: auto;
+  width: 100%;
+  background: linear-gradient(46deg, rgba(227, 236, 252, 1) 0%, rgba(247, 250, 255, 1) 51%, rgba(227, 236, 252, 1) 100%);
+}
+
+
+
+img.pic-about {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: $box-shadow-dark;
+}
+
+//About Me section
+
+.about-me {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  gap: 24px;
+  padding: 16px 64px 64px;
+  max-width: 1000px;
+  transition: padding-left 0.5s ease, padding-right 0.5s ease;
+}
+
+.about-body {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 32px;
+}
+
+.about-details {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  gap: 16px;
+  max-width: 75%;
+}
+
+.me {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  gap: 24px;
+  transition: all 0.4s ease;
+  width: 45%;  
+}
+
+.connect-info-top {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+
+  .section-title {
+    align-self: flex-start;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
+
+.contact-info-bottom {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  background-color: $white;
+  padding: 24px;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  .icon-info-pair {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 32px;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.icon-info-pair {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    a {
+      color: $text-color;
+      text-decoration: none;
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      font-size: 14px;
+      gap: 8px;
+
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+
+.contact-section {
+  display: flex;
+  background-color: $primary-super-light;
+}
+
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  flex: 1 1 auto;
+  gap: 24px;
+  padding: 28px 64px;
+  max-width: 1000px;
+  transition: padding-left 0.5s ease, padding-right 0.5s ease;
+}
+
+.contact-header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  p {
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+.contact-body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+
+  .image {
+    width: 258px;
+    height: auto;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    gap: 24px;
+  }
+}
+
+
+@media (max-width: 785px) {
+  .about-me {
+    padding: 0 32px 32px 32px;
+  }
+
+  .contact {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    max-width: 100%;
+  }
+  .contact-body {
+    flex-wrap: wrap-reverse;
+    gap: 24px;
+  }
+
+  .about-body {
+    flex-wrap: wrap;
+    .me {
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 40%;
+      }
+
+      .connect-info-top {
+        display: none;
+        visibility: hidden;
+        width: 0;
+        height: 0;
+      }
+    }
+    .contact-info-bottom {
+      display: flex;
+      flex-flow: column nowrap;
+      gap: 16px;
+      visibility: visible;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .about-details {
+    max-width: 100%;
+  }
+  
+}
+
+@media (max-width: 450px) {
+  .about-me {
+    padding: 0px 16px 16px 16px;
+  }
+
+  .contact {
+    padding: 32px 16px;
+  }
+
+  .skills-section {
+    padding: 32px 16px;
+  }
+}

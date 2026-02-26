@@ -1,0 +1,27 @@
+@use "../../styles/variables" as *;
+
+.primary-color {
+    color: $primary-color;
+}
+
+.manual-check-hero {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 17%, rgba(145, 171, 219, 1) 52%, rgba(0, 0, 0, 1) 90%);
+}
+
+.decision {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    padding-top: 24px;
+
+    .decision-body {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 16px;
+    }
+}
+
+//Design process section
+.manual-design-process-section {
+    background-color: $primary-light;
+}

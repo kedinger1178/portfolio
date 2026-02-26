@@ -1,0 +1,244 @@
+@use "../../styles/variables" as *;
+
+.hero {
+  background-color: $black;
+  color: $invert-text-color;
+  width: 100%;
+
+  .hero-details {
+    background: url(../../images/homeHero.png) no-repeat top left;
+    background-position: 0px 100%;
+    background-size: auto;
+    background-color: $text-color;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 100px 0px;
+    width: 100%;
+    height: auto;
+
+    .name {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 2px;
+      text-align: center;
+    }
+
+    .occupation {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 7px;
+      text-align: center;
+    }
+
+    .short-info {
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: light;
+      text-align: center;
+    }
+  }
+}
+
+
+//About Me section
+.about-me-section {
+  background-color: $white;
+}
+
+.about-me-body {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 32px;
+
+  .portrait {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    gap: 24px;
+    transition: all 0.4s ease;
+    width: 45%;
+  }
+
+  .about-details {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    gap: 16px;
+    max-width: 75%;
+    transition: all 0.4s ease;
+  }
+}
+
+.portfolio-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+//My Skills section
+.skills-section {
+  background-color: $primary-super-light;
+}
+
+.my-skills-body {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.skills-card {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  background-color: $white;
+  border-radius: 12px;
+  box-shadow: $box-shadow;
+  width: 40%;
+  gap: 16px;
+  padding: 16px;
+
+  .skill-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    span {
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    .progress-bar {
+      background-color: $tertiary-color;
+      border-radius: 20px;
+      border: 1px solid $border-color;
+      height: 20px;
+      width: 55%;
+
+      span {
+        display: block;
+        background: linear-gradient(60deg, rgba(73, 119, 185, 1) 0%, rgba(145, 171, 219, 1) 49%, rgba(73, 119, 185, 1) 99%);
+        height: 20px;
+        border-right: 1px solid $white;
+        border-radius: 20px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 925px) {
+  .about-me-body {
+    .portrait {
+      width: 60%;
+    }
+
+    .about-details {
+      max-width: 60%;
+    }
+  }
+}
+
+@media (max-width: 785px) {
+
+  .contact {
+    padding: 32px;
+  }
+
+  .my-skills-body {
+    flex-wrap: wrap;
+  }
+
+  .skills-card {
+    width: 100%;
+
+    .skill-item {
+      .progress-bar {
+        width: 70%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 785px) {
+  .my-skills-body {
+    flex-wrap: wrap;
+
+    .skills-card {
+      width: 100%;
+
+      .skill-item {
+        .progress-bar {
+          width: 70%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about-me-body {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .me {
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 40%;
+      }
+    }
+
+    .about-details {
+      max-width: 100%;
+    }
+  }
+
+  .skills-card {
+    .skill-item {
+      .progress-bar {
+        width: 100%;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 450px) {
+  .skills-section {
+    padding: 32px 16px;
+  }
+
+  .my-skills-body {
+    .skills-card {
+      .skill-item {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 4px;
+
+        .progress-bar {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

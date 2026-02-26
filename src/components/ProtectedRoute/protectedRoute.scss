@@ -1,0 +1,26 @@
+@use "../../styles/variables" as *;
+
+.page-password {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex: 1 0 auto;
+    height: stretch;
+    max-height: 100%;
+    overflow: auto;
+    width: 100%;
+    height: stretch;
+    background: linear-gradient(46deg, rgba(227, 236, 252, 1) 0%, rgba(247, 250, 255, 1) 51%, rgba(227, 236, 252, 1) 100%);
+}
+
+.password-form {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 0 auto;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+    input {
+        width: 225px;
+    }
+}

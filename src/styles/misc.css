@@ -1,0 +1,48 @@
+.navBar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 12px 64px;
+  background-color: var(--app-background);
+}
+
+.navLinks {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 32px;
+  justify-content: flex-end;
+  list-style: none;
+  li {
+    &:hover {
+      cursor: pointer;
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+      padding: 4px 12px;
+      &:hover {
+        background-color: var(--primary-color);
+        color: var(--invert-text-color);
+        border-radius: var(--border-radius);
+      }
+    }
+  }
+}
+
+.navIcon {
+  width: 75%;
+  height: auto;
+}
+
+      {/* <div className='navBar'>
+        <div className='navLogo'>
+          <img src={images.navLogo} className="navIcon" alt="Kendra E logo"></img>
+        </div>
+        <ul className='navLinks'>
+          <li><a href="#portfolio" target="_self">Portfolio</a></li>
+          <li><a href="#about" target="_self">About</a></li>
+        </ul>
+      </div> */}

@@ -1,0 +1,346 @@
+@use "../styles/variables" as *;
+
+//fonts
+.stylish {
+  font-family: "Stylish", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-bold {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.raleway-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: light;
+}
+
+//resets
+
+body {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: $text-color;
+  background-color: $app-background;
+}
+
+#root {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  background-color: $app-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.page {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1 1 auto;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  all: unset;
+  padding: 12px 24px;
+  border-radius: 20px;
+  color: $invert-text-color;
+  border: none;
+  margin: 16px 0 0 0;
+  font: inherit;
+  /* Inherit font from parent, a common practice in modern resets */
+  outline: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
+  text-align: center;
+
+  &.primary {
+    background-color: $primary-light;
+
+    &:hover,
+    &:active {
+      background-color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  &.secondary {
+    background-color: $primary-color;
+    margin: 0;
+    border-radius: 30px;
+
+    &:hover,
+    &:active {
+      background-color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+
+  &.disabled {
+    background: $disabled;
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: $disabled;
+      cursor: pointer;
+    }
+  }
+}
+
+label {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+input,
+textarea {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  padding: 0px 12px;
+  height: 35px;
+}
+
+textarea {
+  min-height: 75px;
+  max-height: 150px;
+  padding: 8px 12px;
+}
+
+img.pic {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: $box-shadow-dark;
+}
+
+.image-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 32px;
+}
+
+.image {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 12px;
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    transition: all 0.5s ease;
+  }
+
+  p {
+    font-size: 10px;
+    padding: 0 8px;
+  }
+}
+
+.bullet-list-group {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+  h5 {
+    text-transform: uppercase;
+  }
+  ul {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+    padding-inline-start: 18px;
+  }
+}
+
+.component {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 70px;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.no-image-hero {
+  color: $primary-color;
+  width: 100%;
+
+  .hero-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    height: auto;
+    text-align: center;
+  }
+
+  .no-image-title {
+    font-size: 48px;
+    color: $primary-color;
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+}
+
+.section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: stretch;
+}
+
+.section-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  hr {
+    width: 75px;
+    border: 1px solid $primary-color;
+    margin: 0;
+  }
+}
+
+.section-list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto;
+  gap: 24px;
+  padding: 64px;
+  max-width: 1000px;
+  transition: padding-left 0.5s ease, padding-right 0.5s ease;
+
+
+}
+.process-body {
+  hr {
+    border: 1px solid $grey-light;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.section-title {
+  color: $primary-color;
+  text-align: center;
+  width: auto;
+
+  &.caps {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+//Media Queries
+
+@media (max-width: 785px) {
+  .section-list {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 650px) {
+  .case-study {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .no-image-title {
+    font-size: 40px;
+  }
+
+  .section-list {
+    padding: 32px 16px;
+  }
+}

@@ -1,0 +1,315 @@
+@use "./variables" as *;
+
+//Hero styling
+.case-study-hero {
+    display: flex;
+    justify-content: center;
+    background-color: $black;
+    width: 100%;
+}
+
+.case-study {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 32px;
+    max-width: 1000px;
+    padding: 24px 64px;
+    transition: padding-left 0.5s ease, padding-right 0.5s ease;
+    width: stretch;
+}
+
+.hero-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    color: $white;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 2px;
+    padding-top: 32px;
+    transition: all 0.5s ease;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    p {
+        font-weight: 400;
+        line-height: 1.5;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.65)
+    }
+}
+
+.hero-image {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 1 1 auto;
+    transition: all 0.4s ease;
+    width: 45%;
+}
+
+//OVerview section
+
+.overview-section {
+    display: flex;
+    background-color: $white;
+}
+
+.overview {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    padding-top: 0;
+    transition: all 0.4s ease;
+}
+
+.text-block {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4px;
+    h3 {
+        font-weight: 600;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.main-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+    width: 70%;   
+}
+
+.secondary-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+    width: 25%;
+
+    h5 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+//Design process section
+.design-process-section {
+    display: flex;
+}
+
+.design-process {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: $white;
+    gap: 32px;
+    max-width: 1000px;
+    padding: 32px 64px;
+    transition: padding-left 0.5s ease, padding-right 0.5s ease;
+    width: stretch;
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+.design-process-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(227px, 1fr));
+    gap: 32px;
+    width: 100%;
+}
+
+.step {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+
+    h4 {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
+.process-sections {
+    display: flex;
+    background-color: $app-background;
+}
+
+.processes {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 64px;
+    max-width: 1000px;
+    transition: padding-left 0.5s ease, padding-right 0.5s ease;
+    width: stretch;
+}
+
+.process-step-section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+
+    h6 {
+        text-transform: uppercase;
+        color: $grey;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
+
+.process-step-sub-section {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 12px;
+    h6 {
+        letter-spacing: 0;
+    }
+}
+
+.process-header {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+
+.process-body {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 24px;
+}
+
+.step-decision-design-text {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+.step-decision {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 16px;
+
+    span {
+        font-weight: 400;
+    }
+}
+
+
+
+.image {
+    padding-top: 16px;
+}
+
+//Outcome Section
+.outcome-section {
+    background-color: $white;
+}
+
+.outcome {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 1000px;
+    transition: padding-left 0.5s ease, padding-right 0.5s ease;
+    width: stretch;
+    h2 {
+        font-size: 32px;
+        font-weight: 500;
+    }
+}
+
+.outcome-body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+
+//Media Queries
+
+
+@media (max-width: 785px) {
+    .overview {
+        gap: 64px;
+    }
+
+    .case-study {
+        padding: 24px 32px;
+    }
+
+    .hero-text {
+        padding-top: 0;
+    }
+
+    .design-process {
+        padding: 24px 32px;
+    }
+
+    .design-process-body {
+        grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .case-study {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .no-image-title {
+        font-size: 40px;
+    }
+
+    .design-process {
+        padding: 24px 16px;
+    }
+
+    .overview {
+        flex-flow: column nowrap;
+        gap: 24px;
+    }
+
+    .main-xtext,
+    .secondary-text {
+        width: 100%;
+    }
+
+}

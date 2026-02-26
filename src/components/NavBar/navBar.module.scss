@@ -1,0 +1,74 @@
+@use "../../styles/variables" as *;
+
+.navBarSection {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: $black;
+}
+
+.navBar {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 64px 4px 42px;
+  max-width: 1000px;
+  width: stretch;
+  transition: padding-left 0.5s ease, padding-right 0.5s ease;
+}
+
+.navLogo {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: auto;
+}
+
+.navLinks {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 16px;
+  justify-content: flex-end;
+  list-style: none;
+
+}
+
+.link {
+  cursor: pointer;
+  color: $white;
+  text-decoration: none;
+  list-style: none;
+  padding: 8px 12px;
+
+  &:hover,
+  &:active {
+    border-bottom: 5px solid $secondary-color;
+  }
+}
+
+.activeLink {
+  border-bottom: 5px solid $secondary-color;
+}
+
+.navIcon {
+  width: 75%;
+  height: auto;
+}
+
+@media (max-width: 785px) {
+  .navBar {
+    padding: 4px 32px 4px 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navBar {
+    padding: 4px 16px 4px 8px;
+  }
+}
