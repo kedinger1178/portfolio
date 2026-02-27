@@ -209,9 +209,11 @@ img.pic {
   display: flex;
   flex-flow: column nowrap;
   gap: 8px;
+
   h5 {
     text-transform: uppercase;
   }
+
   ul {
     display: flex;
     flex-flow: column nowrap;
@@ -272,6 +274,7 @@ img.pic {
   justify-content: center;
   align-items: center;
   gap: 16px;
+
   hr {
     width: 75px;
     border: 1px solid $primary-color;
@@ -292,6 +295,7 @@ img.pic {
 
 
 }
+
 .process-body {
   hr {
     border: 1px solid $grey-light;

@@ -130,29 +130,6 @@
 
 
 
-.csslightbox {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.csslightbox img {
-  max-width: 60%;
-  height: auto;
-  padding-top: 90px;
-  width: 100%;
-}
-
-.csslightbox:target {
-  outline: none;
-  display: block;
-}
 
 @media (max-width: 570px) {
   .portfolio-item {

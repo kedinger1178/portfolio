@@ -1,12 +1,14 @@
 
 import images from '../../images/imageIndex.js';
-
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PortfolioItem from "../../components/PortfolioItem/PortfolioItem.jsx";
 
 import './portfolio.scss';
 
 function Portfolio() {
     const navigate = useNavigate();
+
     return (
         <div className='page page-portfolio'>
             <header className='no-image-hero'>
@@ -92,76 +94,48 @@ function Portfolio() {
                                         <span>HTML/CSS</span>
                                     </div> 
                                 </a>
-                                <a href="#natIRP" className="portfolio-item">
-                                    <div className="item-image" role="img" aria-label="MyIRP Demo">
-                                        <img src={images.natMyIRP} alt="MyIRP Demo"></img>
-                                    </div>
-                                    <div className="item-text">
-                                        <div className="item-title">MyIRP Demo</div>
-                                        <p className="item-roles">Crative Technologist</p>
-                                        <p className="item-desc">Built a duplicate of the ISC demo and reconfigured it to include RSC pages for the new MyIRP application.</p>
-                                    </div>
-                                    <div className="app-list">
-                                        <span>HTML/CSS</span>
-                                        <span>Javascript</span>
-                                    </div>
-                                </a>
-                                <a href="#_" class="csslightbox" id="natIRP"><img src={images.natMyIRPLg} alt="Nationwide MyIRP Demo"></img></a>
-                                <a href="#natMutualFund" className="portfolio-item">
-                                    <div className="item-image" role="img" aria-label="Mutual Fund">
-                                        <img src={images.natMutualFund} alt="Mutual Fund"></img>
-                                    </div>
-                                    <div className="item-text">
-                                        <div className="item-title">Mutual Fund</div>
-                                        <p className="item-roles">Creative Technologist</p>
-                                        <p className="item-desc">Built the UI main sections and components of the new design for Nationwid's Mutual Fund pages.</p>
-                                    </div>
-                                    <div className="app-list">
-                                        <span>HTML/CSS</span>
-                                        <span>Javascript</span>
-                                    </div>
-                                </a>
-                                <a href="#_" class="csslightbox" id="natMutualFund"><img src={images.natMutualFundLg} alt="Nationwide Mutual Fund"></img></a>
+                                <PortfolioItem 
+                                    imgSrc={images.natMyIRP} 
+                                    lightboxImg={images.natMyIRPLg}
+                                    alt={"MyIRP Demo"} 
+                                    title={"MyIRP Demo"} 
+                                    role={"Creative Technologist"} 
+                                    descs={["Built a duplicate of the ISC demo and reconfigured it to include RSC pages for the new MyIRP application."]}
+                                    apps={["HTML/CSS", "JavaScript"]}
+                                ></PortfolioItem>
+                                <PortfolioItem 
+                                    imgSrc={images.natMutualFund} 
+                                    lightboxImg={images.natMutualFundLg}
+                                    alt={"Mutual Fund"} 
+                                    title={"Mutual Fund"} 
+                                    role={"Creative Technologist"} 
+                                    descs={["Built the UI main sections and components of the new design for Nationwid's Mutual Fund pages."]}
+                                    apps={["HTML/CSS", "JavaScript"]}
+                                ></PortfolioItem>   
                             </div>
                         </div>
                         {/* //InSource Pro */}
                         <div className="web-design-dev-body">
                             <h3>InSource Pro</h3>
                             <div className='portfolio-body'>
-                                <a href="#aceDocs" className="portfolio-item">
-                                    <div className="item-image" role="img" aria-label="ACE Documentation App">
-                                        <img src={images.aceDocs} alt="ACE Documentation App"></img>
-                                    </div>
-                                    <div className="item-text">
-                                        <div className="item-title">ACE Documentation App</div>
-                                        <p className="item-roles">Javascript Developer</p>
-                                        <p className="item-desc">Internal project consisting of ACE framework documentation.</p>
-                                        <p className="item-desc">Produced wireframes, designed mockups and developed the user interface.</p>
-                                    </div>
-                                    <div className="app-list">
-                                        <span>HTML/CSS</span>
-                                        <span>ACE Framework</span>
-                                        <span>JavaScript</span>
-                                    </div>
-                                </a>
-                                <a href="#_" class="csslightbox" id="aceDocs"><img src={images.aceDocsLg} alt="InsourcePro ACE Documentation"></img></a>
-                                <a href="#projTracker" className="portfolio-item">
-                                    <div className="item-image" role="img" aria-label="Project Tracker App">
-                                        <img src={images.projectTracker} alt="Project Tracker App"></img>
-                                    </div>
-                                    <div className="item-text">
-                                        <div className="item-title">Project Tracker App</div>
-                                        <p className="item-roles">Javascript Developer</p>
-                                        <p className="item-desc">Internal project to organize and track all company tasks (clients, projects and tasks).</p>
-                                        <p className="item-desc">Produced wireframes, designed mockups and developed the user interface.</p>
-                                    </div>
-                                    <div className="app-list">
-                                        <span>HTML/CSS</span>
-                                        <span>ACE Framework</span>
-                                        <span>Javascript</span>
-                                    </div>
-                                </a>
-                                <a href="#_" class="csslightbox" id="projTracker"><img src={images.projectTrackerLg} alt="InsourcePro Project Tracker"></img></a>
+                                <PortfolioItem 
+                                    imgSrc={images.aceDocs} 
+                                    lightboxImg={images.aceDocsLg}
+                                    alt={"ACE Documentation App"} 
+                                    title={"ACE Documentation App"} 
+                                    role={"JavaScript Developer"} 
+                                    descs={["Internal project consisting of ACE framework documentation.", "Produced wireframes, designed mockups and developed the user interface."]}
+                                    apps={["HTML/CSS", "ACE Framework", "JavaScript"]}
+                                ></PortfolioItem> 
+                                <PortfolioItem 
+                                    imgSrc={images.projectTracker} 
+                                    lightboxImg={images.projectTrackerLg}
+                                    alt={"Project Tracker App"} 
+                                    title={"Project Tracker App"} 
+                                    role={"JavaScript Developer"} 
+                                    descs={["Internal project to organize and track all company tasks (clients, projects and tasks).", "Produced wireframes, designed mockups and developed the user interface."]}
+                                    apps={["HTML/CSS", "ACE Framework", "JavaScript"]}
+                                ></PortfolioItem> 
                             </div>
                         </div>
                         {/* //Jegs */}
