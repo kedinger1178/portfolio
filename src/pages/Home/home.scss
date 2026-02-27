@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding: 100px 64px;
+    padding: 100px 16px;
     height: auto;
 
     .name {
@@ -156,9 +156,6 @@
   .contact {
     padding: 32px;
   }
-  .hero-details {
-    padding: 100px 32px;
-  }
 
   .my-skills-body {
     flex-wrap: wrap;
@@ -173,7 +170,6 @@
       }
     }
   }
-
 }
 
 @media (max-width: 785px) {
@@ -227,9 +223,6 @@
 @media (max-width: 450px) {
   .skills-section {
     padding: 32px 16px;
-  }
-  .hero-details {
-    padding: 100px 16px;
   }
 
   .my-skills-body {
