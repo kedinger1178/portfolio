@@ -13,7 +13,7 @@ function Footer() {
                 <div className={styles.letsConnectLinks}>
                     <h3 className={styles.sectionTitle}>Let&#39;s chat!</h3>
                     <div className={styles.resume}>
-                        <a href="/resume.pdf" target="_blank"> My resume</a>
+                        <a href="/Resume.pdf" target="_blank"> My resume</a>
                     </div>
                     <div className={styles.email}>
                         <a href="mailto:kedinger78@gmail.com">
