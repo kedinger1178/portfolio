@@ -15,7 +15,7 @@
     cursor: pointer;
     transition: all .4s ease;
     height: 100%;
-
+    pointer-events: auto;
     &:hover {
         box-shadow: $box-shadow-dark;
 
@@ -98,4 +98,15 @@
         border-radius: 6px;
         white-space: nowrap;
     }
+}
+
+@media (max-width: 570px) {
+  .portfolio-item {
+    .item-image {
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
 }

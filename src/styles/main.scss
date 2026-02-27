@@ -115,9 +115,11 @@ h3 {
   -webkit-appearance: none;
   cursor: pointer;
   text-align: center;
+  pointer-events: auto;
 
   &.primary {
     background-color: $primary-light;
+    
 
     &:hover,
     &:active {

@@ -40,7 +40,7 @@ function Home() {
                 <div className='section-list'>
                     <div className="section-header">
                         <hr></hr>
-                        <h3 className='section-title caps'>Case Studies</h3>
+                        <h3 className='section-title caps'>Portfolio</h3>
                         <hr></hr>
                     </div>
                     <div className='portfolio-body'>
@@ -88,7 +88,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="portfolio-footer">
-                        <button type="button" className="button primary" onClick={() => navigate("/portfolio")}>View Portfolio &nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button> 
+                        <button type="button" className="button primary" onClick={() => navigate("/portfolio")}>View More &nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-right"></i></button> 
                     </div> 
                 </div>
             </section>

@@ -36,100 +36,99 @@
 }
 
 .portfolio-item {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: $white;
-  border: .5px solid $primary-super-light;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-  cursor: pointer;
-  transition: all .4s ease;
-
-  &:hover {
-    box-shadow: $box-shadow-dark;
-
-    .item-image {
-      background: linear-gradient(1deg, rgba(0, 76, 114, 1) 0%, rgba(145, 171, 219, 1) 51%, rgba(0, 76, 114, 1) 100%);
-    }
-
-    .item-text,
-    .app-list {
-      background-color: $app-background;
-    }
-  }
-}
-.item-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 184px;
-  background: linear-gradient(130deg, rgba(145, 171, 219, 1) 0%, rgba(227, 236, 252, 1) 51%, rgba(145, 171, 219, 1) 100%);
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
-  box-shadow: inset 0px -6px 6px -2px rgba(0, 0, 0, 0.17);
-  ;
-  padding: 16px;
-
-  img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $white;
+    border: .5px solid $primary-super-light;
     border-radius: $border-radius;
-    transition: all 0.5s ease;
+    box-shadow: $box-shadow;
+    cursor: pointer;
+    transition: all .4s ease;
+    height: 100%;
+    pointer-events: auto;
+    &:hover {
+        box-shadow: $box-shadow-dark;
 
-    &.man-check-queue {
-      border: none;
+        .item-image {
+            background: linear-gradient(1deg, rgba(0, 76, 114, 1) 0%, rgba(145, 171, 219, 1) 51%, rgba(0, 76, 114, 1) 100%);
+        }
+
+        .item-text,
+        .app-list {
+            background-color: $app-background;
+        }
     }
-  }
+}
+
+.item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 184px;
+    background: linear-gradient(130deg, rgba(145, 171, 219, 1) 0%, rgba(227, 236, 252, 1) 51%, rgba(145, 171, 219, 1) 100%);
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    box-shadow: inset 0px -6px 6px -2px rgba(0, 0, 0, 0.17);
+    ;
+    padding: 16px;
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+        border-radius: $border-radius;
+        transition: all 0.5s ease;
+
+        &.man-check-queue {
+            border: none;
+        }
+    }
 }
 
 .item-text {
-  display: flex;
-  flex-flow: column nowrap;
-  align-self: stretch;
-  flex: 1 1 auto;
-  background-color: $white;
-  padding: 16px;
-  gap: 8px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: stretch;
+    flex: 1 1 auto;
+    background-color: $white;
+    padding: 16px;
+    gap: 8px;
 
-  .item-title {
-    font-weight: 500;
-  }
+    .item-title {
+        font-weight: 500;
+    }
 
-  .item-roles {
-    font-weight: 400;
-    font-size: 12px;
-  }
+    .item-roles {
+        font-weight: 400;
+        font-size: 12px;
+    }
 
-  .item-desc {
-    font-weight: 200;
-    font-size: 12px;
-  }
+    .item-desc {
+        font-weight: 200;
+        font-size: 12px;
+    }
 }
 
 .app-list {
-  background-color: $white;
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
-  font-weight: 200;
-  font-size: 10px;
-  display: flex;
-  flex-flow: row wrap;
-  gap: 8px;
-  padding: 0 16px 16px;
+    background-color: $white;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    font-weight: 200;
+    font-size: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
+    padding: 0 16px 16px;
 
-  span {
-    padding: 4px 8px;
-    background-color: $primary-super-light;
-    border-radius: 6px;
-    white-space: nowrap;
-  }
+    span {
+        padding: 4px 8px;
+        background-color: $primary-super-light;
+        border-radius: 6px;
+        white-space: nowrap;
+    }
 }
-
-
-
 
 @media (max-width: 570px) {
   .portfolio-item {
@@ -141,5 +140,6 @@
     }
   }
 }
+
 
 
