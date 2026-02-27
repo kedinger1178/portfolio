@@ -46,16 +46,16 @@ function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className={styles.form}>
             <div className={styles['input-text']}>
-                <label>Name <span className={styles.red}>*</span></label>
-                <input type='text' name='name' value={name} onChange={(e) => setName(e.target.value)}></input>
+                <label for='name'>Name <span className={styles.red}>*</span></label>
+                <input type='text' name='name' id='name' required value={name} onChange={(e) => setName(e.target.value)}></input>
             </div>
             <div className={styles['input-text']}>
-                <label>Email <span className={styles.red}>*</span></label>
-                <input type='text' name='email' value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                <label for='email'>Email <span className={styles.red}>*</span></label>
+                <input type='email' name='email' id='email' value={email} required onChange={(e) => setEmail(e.target.value)}></input>
             </div>
             <div className={styles['input-text']}>
-                <label>Message <span className={styles.red}>*</span></label>
-                <textarea type='text' rows="5" name='message' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+                <label for='message'>Message <span className={styles.red}>*</span></label>
+                <textarea type='text' rows="5" id='message' required name='message' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
             </div>
             <button type="submit" className={`button secondary ${!isFormValid ? "disabled" : ""}`} disabled={!isFormValid}>
                 Send
