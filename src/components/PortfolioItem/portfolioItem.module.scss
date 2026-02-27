@@ -16,8 +16,10 @@
     transition: all .4s ease;
     height: 100%;
     pointer-events: auto;
+
     &:hover {
         box-shadow: $box-shadow-dark;
+        cursor: pointer;
 
         .item-image {
             background: linear-gradient(1deg, rgba(0, 76, 114, 1) 0%, rgba(145, 171, 219, 1) 51%, rgba(0, 76, 114, 1) 100%);
@@ -101,12 +103,12 @@
 }
 
 @media (max-width: 570px) {
-  .portfolio-item {
-    .item-image {
-      img {
-        width: auto;
-        height: 100%;
-      }
+    .portfolio-item {
+        .item-image {
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
     }
-  }
 }

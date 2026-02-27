@@ -49,6 +49,7 @@
   &:hover,
   &:active {
     border-bottom: 5px solid $secondary-color;
+    cursor: pointer;
   }
 }
 

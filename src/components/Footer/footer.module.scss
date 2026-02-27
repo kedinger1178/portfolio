@@ -81,6 +81,16 @@
         color: $white;
       }
     }
+    &:hover {
+      cursor: pointer;
+      
+      a {
+        color: $primary-super-light;
+      }
+      span {
+        color: $primary-super-light;
+      }
+    }
   }
 
   
