@@ -29,3 +29,11 @@
     width: 100%;
   }
 }
+
+@media (max-width: 785px) {
+  .lightbox {
+    img {
+      max-width: 90%;
+    }
+  }
+}
