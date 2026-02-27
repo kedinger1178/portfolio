@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router } from 'react-router-dom';
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 import NavBar from "./components/NavBar/NavBar";
@@ -17,7 +18,7 @@ import './styles/main.scss';
 function App() {
   return (
     <div className='app'>
-      <BrowserRouter>
+      <HashRouter>
        
           <NavBar />
 
@@ -44,7 +45,7 @@ function App() {
 
         <Footer />
 
-      </BrowserRouter>  
+      </HashRouter>  
     </div>
   );
 }
