@@ -1,5 +1,5 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
-
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop";
 import ProtectedRoute from "./components/ProtectedRoute/ProtectedRoute";
 
 import NavBar from "./components/NavBar/NavBar";
@@ -18,8 +18,8 @@ import './styles/main.scss';
 function App() {
   return (
     <div className='app'>
-      <HashRouter>
-       
+      <Router>
+       <ScrollToTop />
           <NavBar />
 
         <Routes>
@@ -45,7 +45,7 @@ function App() {
 
         <Footer />
 
-      </HashRouter>  
+      </Router>  
     </div>
   );
 }
