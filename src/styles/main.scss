@@ -324,9 +324,13 @@ img.pic {
   .section-list {
     padding: 32px;
   }
+  body {
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 650px) {
+
   .case-study {
     flex-flow: column nowrap;
     align-items: center;
