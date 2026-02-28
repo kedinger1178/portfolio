@@ -5,21 +5,12 @@ import styles from './lightbox.module.scss';
 
 function LightboxDiv({ isOpen, onClose, children }) {
     useEffect(() => {
-        if (isOpen) {
-            const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarWidth}px`; // disable scrolling
-        } else {
-            document.body.style.overflow = ""; // restore scrolling
-            document.body.style.paddingRight = "0px";
-        }
-
-        // Cleanup on unmount
+        document.body.style.overflow = isOpen ? "hidden" : "";
         return () => {
-            document.body.style.overflow = "";
-            document.body.style.paddingRight = "0px";
+        document.body.style.overflow = "";
         };
     }, [isOpen]);
+
 
     if (!isOpen) return null;
 
@@ -32,7 +23,6 @@ function LightboxDiv({ isOpen, onClose, children }) {
                     className="button primary"
                     onClick={(e) => {
                         e.stopPropagation(); // just in case
-                        console.log("clicked button");
                         onClose();
                     }}
                 >
