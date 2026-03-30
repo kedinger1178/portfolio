@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
-import Footer from "../../components/Footer/Footer.jsx";
 
 import './protectedRoute.scss';
 
@@ -35,6 +33,7 @@ export default function ProtectedRoute({ children, password: correctPassword }) 
           <input
             type="password"
             value={password}
+            autoFocus
             onChange={(e) => setPassword(e.target.value)}
             placeholder=""
           />
