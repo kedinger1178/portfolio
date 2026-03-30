@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.98aa836e.css",
-    "main.js": "/static/js/main.10c4c7c9.js",
-    "static/js/453.a7d99afe.chunk.js": "/static/js/453.a7d99afe.chunk.js",
+    "main.css": "/static/css/main.26a27f65.css",
+    "main.js": "/static/js/main.0d0c7739.js",
+    "static/js/453.3f1fb51b.chunk.js": "/static/js/453.3f1fb51b.chunk.js",
     "static/media/homeHero.png": "/static/media/homeHero.b91c4af1c3563c004281.png",
     "static/media/hero-empty.png": "/static/media/hero-empty.b26e9113aeb0557b6eb9.png",
     "static/media/comingSoon.png": "/static/media/comingSoon.64c29692edef7d3c2bb3.png",
@@ -28,25 +28,35 @@
     "static/media/natMutualFunds.png": "/static/media/natMutualFunds.1f74267e986d977fba9f.png",
     "static/media/natmyirpDemo.png": "/static/media/natmyirpDemo.20131aebcc13eea52252.png",
     "static/media/pubAwardsBidPackagePage.png": "/static/media/pubAwardsBidPackagePage.1cb4e794db65ffa93fbe.png",
+    "static/media/newCompanies-add.png": "/static/media/newCompanies-add.f7af3687e96d6b1f7356.png",
     "static/media/NatCare.png": "/static/media/NatCare.e84e8db2560e42257679.png",
+    "static/media/abuser-list-hero.png": "/static/media/abuser-list-hero.b27e083023d6e9400e85.png",
+    "static/media/comparisonList-add.png": "/static/media/comparisonList-add.43a98c6118373c199d7b.png",
     "static/media/pubAwardsPageWithMessage.png": "/static/media/pubAwardsPageWithMessage.94fb08b7b885b5e537af.png",
     "static/media/pubAwardsBidRoundPage.png": "/static/media/pubAwardsBidRoundPage.8c82df941ed518c8b8bf.png",
     "static/media/searchSave.png": "/static/media/searchSave.e5e9269c573906e9aeb2.png",
     "static/media/problemCheck.png": "/static/media/problemCheck.0601a56ac403bde94005.png",
     "static/media/mancheck-hero.png": "/static/media/mancheck-hero.99f341138e31e1bc9d3c.png",
+    "static/media/comparisonList.png": "/static/media/comparisonList.97431788f74ed529f6c9.png",
+    "static/media/abuser-newCompanies.png": "/static/media/abuser-newCompanies.4c92af8fe82569805808.png",
     "static/media/pubAwardsPage.png": "/static/media/pubAwardsPage.63c77d23f43c2c82086f.png",
     "static/media/aceDocs.png": "/static/media/aceDocs.2bc6ff633f7feafd189e.png",
+    "static/media/masterList-add.png": "/static/media/masterList-add.d96ae6f240467d78e7f0.png",
+    "static/media/masterList.png": "/static/media/masterList.15fe0e787e8033bf2f9c.png",
+    "static/media/abuserDetails.png": "/static/media/abuserDetails.68e581d91fa6a790fba0.png",
+    "static/media/Comparison-modal-individual.png": "/static/media/Comparison-modal-individual.89f99d7a6dd50c4b258a.png",
+    "static/media/comparisonModal.png": "/static/media/comparisonModal.3aa45d7e1aea6c4a260d.png",
     "static/media/checkDashboard.png": "/static/media/checkDashboard.ab95ec16b8778ed8f04c.png",
     "static/media/applyPayError.png": "/static/media/applyPayError.d7bde60a30c25d42adf7.png",
     "static/media/accountingDashboard.png": "/static/media/accountingDashboard.3ed13b117170c5ca90f6.png",
     "static/media/applyPayment.png": "/static/media/applyPayment.58ca07ab1bcb94e9ae24.png",
     "index.html": "/index.html",
-    "main.98aa836e.css.map": "/static/css/main.98aa836e.css.map",
-    "main.10c4c7c9.js.map": "/static/js/main.10c4c7c9.js.map",
-    "453.a7d99afe.chunk.js.map": "/static/js/453.a7d99afe.chunk.js.map"
+    "main.26a27f65.css.map": "/static/css/main.26a27f65.css.map",
+    "main.0d0c7739.js.map": "/static/js/main.0d0c7739.js.map",
+    "453.3f1fb51b.chunk.js.map": "/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98aa836e.css",
-    "static/js/main.10c4c7c9.js"
+    "static/css/main.26a27f65.css",
+    "static/js/main.0d0c7739.js"
   ]
 }
