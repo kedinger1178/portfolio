@@ -192,25 +192,25 @@ function AbuserList() {
                                                 <div className="image" role="img" aria-label="Master List Page Add to Master">
                                                     <img src={images.masterListAdd} alt="Master List Page Add to Master"></img>
                                                     <div className="step-decision">
-                                                        <span>Master List Page</span> 
+                                                        <span>Master List page</span> 
                                                     </div>
                                                 </div>  
                                                 <div className="image" role="img" aria-label="Comparison List Page Add to Master">
                                                     <img src={images.comparisonListAdd} alt="Comparison List Page Add to Master"></img>
                                                     <div className="step-decision">
-                                                        <span>Comparison List Page</span> 
+                                                        <span>Comparison List page</span> 
                                                     </div>
                                                 </div> 
                                                 <div className="image" role="img" aria-label="New Companies Page Add to Master Individually">
                                                     <img src={images.newCompaniesAddIndividually} alt="New Companies Page Add to Master Individually"></img>
                                                     <div className="step-decision">
-                                                        <span>New Companies List Page</span> 
+                                                        <span>New Companies List page - individually</span> 
                                                     </div>
                                                 </div> 
                                                 <div className="image" role="img" aria-label="New Companies Page Add to Master in bulk">
                                                     <img src={images.newCompaniesAddBulk} alt="New Companies Page Add to Master in bulk"></img>
                                                     <div className="step-decision">
-                                                        <span>New Companies List Page</span> 
+                                                        <span>New Companies List page - bulk</span> 
                                                     </div>
                                                 </div> 
                                             </div>
