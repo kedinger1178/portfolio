@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 import './protectedRoute.scss';
 
 export default function ProtectedRoute({ children, password: correctPassword }) {
   const [password, setPassword] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const passwordRef = useRef(null);
+
+  useEffect(() => {
+    // Focus the input when the component mounts
+    passwordRef.current?.focus();
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,8 +39,8 @@ export default function ProtectedRoute({ children, password: correctPassword }) 
           <label>Please enter the access password provided.</label>
           <input
             type="password"
+            ref={passwordRef}
             value={password}
-            autoFocus
             onChange={(e) => setPassword(e.target.value)}
             placeholder=""
           />
