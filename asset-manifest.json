@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.26a27f65.css",
-    "main.js": "/static/js/main.42664bf0.js",
+    "main.js": "/static/js/main.ddc6862d.js",
     "static/js/453.3f1fb51b.chunk.js": "/static/js/453.3f1fb51b.chunk.js",
     "static/media/homeHero.png": "/static/media/homeHero.b91c4af1c3563c004281.png",
     "static/media/hero-empty.png": "/static/media/hero-empty.b26e9113aeb0557b6eb9.png",
@@ -28,11 +28,12 @@
     "static/media/natMutualFunds.png": "/static/media/natMutualFunds.1f74267e986d977fba9f.png",
     "static/media/natmyirpDemo.png": "/static/media/natmyirpDemo.20131aebcc13eea52252.png",
     "static/media/pubAwardsBidPackagePage.png": "/static/media/pubAwardsBidPackagePage.1cb4e794db65ffa93fbe.png",
-    "static/media/newCompanies-add.png": "/static/media/newCompanies-add.f7af3687e96d6b1f7356.png",
     "static/media/NatCare.png": "/static/media/NatCare.e84e8db2560e42257679.png",
     "static/media/abuser-list-hero.png": "/static/media/abuser-list-hero.b27e083023d6e9400e85.png",
+    "static/media/newCompaniesAdd-individually.png": "/static/media/newCompaniesAdd-individually.6f608ae24f2a17ae12c0.png",
     "static/media/comparisonList-add.png": "/static/media/comparisonList-add.43a98c6118373c199d7b.png",
     "static/media/pubAwardsPageWithMessage.png": "/static/media/pubAwardsPageWithMessage.94fb08b7b885b5e537af.png",
+    "static/media/newCompanies-add-bulk.png": "/static/media/newCompanies-add-bulk.4a67a87a1614ceef993a.png",
     "static/media/pubAwardsBidRoundPage.png": "/static/media/pubAwardsBidRoundPage.8c82df941ed518c8b8bf.png",
     "static/media/searchSave.png": "/static/media/searchSave.e5e9269c573906e9aeb2.png",
     "static/media/problemCheck.png": "/static/media/problemCheck.0601a56ac403bde94005.png",
@@ -52,11 +53,11 @@
     "static/media/applyPayment.png": "/static/media/applyPayment.58ca07ab1bcb94e9ae24.png",
     "index.html": "/index.html",
     "main.26a27f65.css.map": "/static/css/main.26a27f65.css.map",
-    "main.42664bf0.js.map": "/static/js/main.42664bf0.js.map",
+    "main.ddc6862d.js.map": "/static/js/main.ddc6862d.js.map",
     "453.3f1fb51b.chunk.js.map": "/static/js/453.3f1fb51b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.26a27f65.css",
-    "static/js/main.42664bf0.js"
+    "static/js/main.ddc6862d.js"
   ]
 }
