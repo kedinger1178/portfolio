@@ -1,16 +1,20 @@
 @use "../../styles/variables" as *;
 
-.abuse-list-hero {
-    img {
-        border-radius: $border-radius;
-    }
+.teal {
+    color: $teal;
 }
 
-.black {
-    background-color: $black;
-    width: 100%;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    flex: 1 1 auto;
+.abuser-list-hero {
+    background: linear-gradient(0deg,rgba(255, 255, 255, 1) 17%, rgba(2, 154, 168, 1) 52%, rgba(0, 0, 0, 1) 90%);
+}
+
+//Design process section
+.abuser-design-process-section {
+    background-color: $teal;
+}
+
+.decision-body {
+    .process-step-sub-section {
+       margin: 24px 0;
+    }
 }

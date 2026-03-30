@@ -159,7 +159,7 @@ function PublishAwards() {
                                             </ul>
                                         </div>
                                         <p>The goal is rapid orientation with zero ambiguity.</p>
-                                        <div className='image-group'>
+                                        <div className='image-group-3'>
                                             <div className="image" role="img" aria-label="Take Batch Start">
                                                 <img src={images.pubAwardsBidPackagePage} alt="Take Batch Start"></img>
                                                 <div className="step-decision">

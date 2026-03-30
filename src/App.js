@@ -40,7 +40,13 @@ function App() {
             </ProtectedRoute>
             }
           />
-          <Route path="/abuserList" element={<AbuserList />} />
+          <Route path="/abuserList" 
+            element={
+            <ProtectedRoute password="KEUX2026">
+              <AbuserList/>
+            </ProtectedRoute>
+            }
+          />
         </Routes>
 
         <Footer />

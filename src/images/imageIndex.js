@@ -44,6 +44,16 @@ import pubAwardsPage from './pubAwardsPage.png';
 import pubAwardsPageWithMessage from './pubAwardsPageWithMessage.png';
 
 import comingSoon from './comingSoon.png';
+import abuserListHero from './abuser-list-hero.png';
+import masterList from './masterList.png';
+import newCompanies from './abuser-newCompanies.png';
+import comparisonModal from './comparisonModal.png';
+import comparisonModalIndividual from './Comparison-modal-individual.png';
+import abuserDetails from './abuserDetails.png';
+import comparisonList from './comparisonList.png';
+import newCompaniesAdd from './newCompanies-add.png';
+import comparisonListAdd from './comparisonList-add.png';
+import masterListAdd from './masterList-add.png';
 
 export default {
     hero,
@@ -86,7 +96,16 @@ export default {
     payWithError,
     problemCheck,
 
-
+    abuserListHero,
+    masterList,
+    newCompanies,
+    comparisonModal,
+    comparisonModalIndividual,
+    comparisonList,
+    abuserDetails,
+    newCompaniesAdd,
+    comparisonListAdd,
+    masterListAdd,
     comingSoon,
 
     foundation,

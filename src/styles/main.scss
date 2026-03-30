@@ -178,10 +178,18 @@ img.pic {
   box-shadow: $box-shadow-dark;
 }
 
-.image-group {
+.image-group-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(313px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.image-group-3 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   gap: 32px;
+  width: 100%;
 }
 
 .image {
