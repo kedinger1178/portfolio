@@ -51,7 +51,8 @@ import comparisonModal from './comparisonModal.png';
 import comparisonModalIndividual from './Comparison-modal-individual.png';
 import abuserDetails from './abuserDetails.png';
 import comparisonList from './comparisonList.png';
-import newCompaniesAdd from './newCompanies-add.png';
+import newCompaniesAddIndividually from './newCompaniesAdd-individually.png';
+import newCompaniesAddBulk from './newCompanies-add-bulk.png';
 import comparisonListAdd from './comparisonList-add.png';
 import masterListAdd from './masterList-add.png';
 
@@ -103,7 +104,8 @@ export default {
     comparisonModalIndividual,
     comparisonList,
     abuserDetails,
-    newCompaniesAdd,
+    newCompaniesAddIndividually,
+    newCompaniesAddBulk,
     comparisonListAdd,
     masterListAdd,
     comingSoon,

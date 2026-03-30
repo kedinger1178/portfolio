@@ -188,7 +188,7 @@ function AbuserList() {
                                         <div className="process-step-sub-section">
                                             <h6>Flexible Additions throughout the Workflow</h6>
                                             <p>At any point during the comparison and review process, administrators can add a new client directly to the Master Abuser List. This flexibility reduces unnecessary clicks and streamlines the workflow, enabling immediate action when potential risks are identified. By allowing entries to be added at multiple stages, the system empowers administrators to maintain a current and reliable list while minimizing friction and making decision-making faster and more efficient.</p>                                        
-                                            <div className='image-group-3'>
+                                            <div className='image-group-2'>
                                                 <div className="image" role="img" aria-label="Master List Page Add to Master">
                                                     <img src={images.masterListAdd} alt="Master List Page Add to Master"></img>
                                                     <div className="step-decision">
@@ -201,8 +201,14 @@ function AbuserList() {
                                                         <span>Comparison List Page</span> 
                                                     </div>
                                                 </div> 
-                                                <div className="image" role="img" aria-label="New Companies Page Add to Master">
-                                                    <img src={images.newCompaniesAdd} alt="New Companies Page Add to Master"></img>
+                                                <div className="image" role="img" aria-label="New Companies Page Add to Master Individually">
+                                                    <img src={images.newCompaniesAddIndividually} alt="New Companies Page Add to Master Individually"></img>
+                                                    <div className="step-decision">
+                                                        <span>New Companies List Page</span> 
+                                                    </div>
+                                                </div> 
+                                                <div className="image" role="img" aria-label="New Companies Page Add to Master in bulk">
+                                                    <img src={images.newCompaniesAddBulk} alt="New Companies Page Add to Master in bulk"></img>
                                                     <div className="step-decision">
                                                         <span>New Companies List Page</span> 
                                                     </div>
