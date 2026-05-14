@@ -17,8 +17,8 @@ function About() {
             <section id='aboutMe' className='about-section'>
                 <div className='about-me'>
                     <div className='about-body'>
-                        <div className='me' role="img" aria-label="Me at the park">
-                            <img src={images.meWithDogs} className="pic-about"></img>
+                        <div className='me' role="img" aria-label="About Me">
+                            <img src={images.portrait} className="pic-about"></img>
                             <div className='connect-info-top'>
                                 <h3 className='section-title'>Let&#39;s Connect!</h3>
                                 <div className='icon-info-pair'>
@@ -77,8 +77,8 @@ function About() {
                         <div className='contact-form'>
                             <ContactForm />
                         </div>
-                        <div className='image' role="img" aria-label="Me with Zoey">
-                            <img src={images.meWithZoey} className="pic-about"></img>
+                        <div className='image' role="img" aria-label="Portrait">
+                            <img src={images.meWithDogs} className="pic-about"></img>
                         </div>
                     </div>
                     

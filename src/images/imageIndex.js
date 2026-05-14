@@ -3,6 +3,7 @@ import homeHero from './homeHero.png';
 import meWithDogs from './me3.png';
 import meWithZoey from './me-zoey.jpg';
 import portrait from './portrait.png';
+import headshot from './headshot.png';
 import navLogo from './Kendra-logo.png';
 
 import natCare from './NatCare.png';
@@ -63,6 +64,7 @@ export default {
     meWithZoey,
     meWithDogs,
     portrait,
+    headshot,
 
     abuserList,
     pubAwards,

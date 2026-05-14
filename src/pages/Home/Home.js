@@ -26,12 +26,12 @@ function Home() {
                     </div>
                     <div className='about-me-body'>
                         <div className='portrait' role="img" aria-label="Portrait">
-                            <img src={images.portrait} className="pic" alt="Portrait"></img>
+                            <img src={images.headshot} className="pic" alt="Headshot"></img>
                         </div>
                         <div className='about-details'>
                             <p>Hello, I'm Kendra, a UX Designer and UI Developer based in Columbus, Ohio.</p>
-                            <p>With a strong foundation in UX design and modern front-end technologies, I bring ideas to life from concept to implementation, collaborating with cross-functional teams to build seamless, engaging interfaces that improve usability and drive impact. Detail-oriented and energized by problem-solving, I’m passionate about creating experiences that feel effortless to users.</p>
-                            <p>Outside of UX, I enjoy taking my dogs to the park, exploring great films, solving puzzles, and collecting fine art — all of which continue to inspire my appreciation for thoughtful design.</p>
+                            <p>I am passionate about combining strategy, creativity, and technical expertise to craft intuitive, user-centered digital experiences. With a strong foundation in UX design and modern front-end technologies, I bring ideas to life from concept to implementation, collaborating with cross-functional teams to build seamless, engaging interfaces that improve usability and drive impact. Detail-oriented and energized by problem-solving, <strong>I'm passionate about creating experiences that feel effortless to users</strong>.</p>
+                            <p>Outside of UX, I enjoy taking my dogs to the park, exploring great films, solving puzzles, and collecting fine art; all of which continue to inspire my appreciation for thoughtful design.</p>
                         </div>
                     </div>
                 </div>
