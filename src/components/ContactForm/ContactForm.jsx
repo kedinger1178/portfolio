@@ -23,7 +23,7 @@ function ContactForm() {
 
     emailjs
       .send(
-        "service_78lkhx4",
+        "service_0beinec",
         "template_4acewb9",
         templateParams,
         "WigGPQ2YoLMh068co"
